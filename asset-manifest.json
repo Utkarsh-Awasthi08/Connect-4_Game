@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Connect-4_Game/static/css/main.7efde049.css",
+    "main.js": "/Connect-4_Game/static/js/main.ab2b85c1.js",
+    "index.html": "/Connect-4_Game/index.html",
+    "main.7efde049.css.map": "/Connect-4_Game/static/css/main.7efde049.css.map",
+    "main.ab2b85c1.js.map": "/Connect-4_Game/static/js/main.ab2b85c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7efde049.css",
+    "static/js/main.ab2b85c1.js"
+  ]
+}
