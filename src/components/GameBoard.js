@@ -3,7 +3,7 @@ import GameCircle from './GameCircle';
 import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { isWinner } from '../helper';
+import { getComputerMove, isWinner } from '../helper';
 import { isDraw } from '../helper';
 
 const NO_PLAYER = 0;
@@ -43,6 +43,9 @@ const GameBoard = () => {
         }
         return circles;
     }
+    const suggestMove=()=>{
+        circleClicked(getComputerMove(gameBoard));
+    }
     const circleClicked = (id) => {
         if (gameBoard[id] !== NO_PLAYER)
             return;
@@ -75,7 +78,7 @@ const GameBoard = () => {
                     {initBoard()}
                 </div>
             </div>
-            <Footer handleClick={initGame} />
+            <Footer handleClick={initGame} onSuggestClick={suggestMove} />
         </>
     )
 }
